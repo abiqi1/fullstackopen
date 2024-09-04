@@ -6,7 +6,7 @@ sequenceDiagram
     Note right of browser: When the button on the form is clicked, the browser will send only one POST request to the server. The request Content-Type header tells the server that the data is in JSON. It also sends over well the request payload which contains the new note as JSON data
     browser->>server: POST https://fullstack-exampleapp.heroukapp.com/new_note_spa
     activate server
-    server-->>browser: 201 created - JSON Data
+    server-->>browser: 201 - created
     deactivate server
 
     Note left of server: The server responds by sending back a 201 status code reply, as well as a request payload which contains the new note as JSON data.
