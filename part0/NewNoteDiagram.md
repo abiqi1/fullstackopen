@@ -8,7 +8,7 @@ sequenceDiagram
     activate server
     server-->>browser: 302
     deactivate server
-s
+
     Note right of server: The server deals with POST request by accessing the req.body. It creates a new note object and adds it to the notes array status code 302 - URL redirect to /notes, so the browser reloads the Notes page.
 
     Note right of browser: The server responds with HTTP status code 302 - URL redirect to /notes, so the browser reloads the Notes page.
